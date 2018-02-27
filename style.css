@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+body {
+    background-color: #80CBC4;
+}
+
+h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 60px;
+}
+div.container {
+    /*background-color: blue;*/
+    align-content: center;
+    align-self: center;
+    padding-left: 10%;
+}
+
+body.buttons {
+    align-content: center;
+    margin: 50px;
+    padding: 50px;
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: #80CBC4;
+    text-align: center;
+    min-width: 178px;
+    display: inline-block;
+    font-size: medium;
+    margin-right: 25px;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
