@@ -2,39 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- css, scriptid -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Title</title>
     <script type="text/javascript" src="otps.js"></script>
     <script type="text/javascript" src="sha512.js"></script>
     <script type="text/javascript" src="sha-5122.js"></script>
     <script src="JavaScript-MD5-master/js/md5.min.js"></script>
-    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
 </head>
 <body>
 <h1 align="center">Encrypt</h1>
     <div class="container" id="big-content">
         <div class="container-wrapper">
+            <!-- kasutaja kirjutab -->
             <textarea id="input" name="myinput" placeholder="Here comes you marvelous input!" cols="80" rows="3"></textarea>
-        <!--<label for="input">Введите ваш логин:</label>-->
             <p></p>
             <textarea type="text" id="key" name="mykey" placeholder="...and here comes your key" value="" cols="80" rows="3"></textarea>
             <p></p>
         </div>
         <div class="buttons">
+            <!-- nuppud -->
         <button onclick="otp()">OTP-encrypt</button>
         <button onclick="otpBack()">OTP-decrypt</button>
         <button onclick="sha5112()">SHA-512</button>
         <button onclick="md5()">MD5</button>
-        <!--
-        <button onclick="otpEncode(true)"> OTP-encrypt</button>
-        <button onclick="otpEncode(false)"> OTP-decrypt</button>
-        -->
         </div>
         <p></p>
         <div class="content-wrapper" style="margin-bottom: 50px;">
         <textarea readonly id="output" placeholder="Output will appear right here!" cols="73" rows="3"></textarea>
         <output name="abc" for="output"></output>
-        <!--<button class="material-icons" onclick="copyToClipboard()" id="copyButton">content_copy</button>-->
         </div>
     </div>
 </body>

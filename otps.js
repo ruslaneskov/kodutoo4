@@ -1,9 +1,11 @@
 function otp() {
+    // kasutusel kui encrypt
     var input = document.getElementById("input").value.toLowerCase();
     var boolean = true;
     document.getElementById("output").innerHTML = result(input, boolean);
 }
 function otpBack() {
+    // kasutusel kui decrypt
     var input = document.getElementById("input").value.toLowerCase();
     var boolean = false;
     document.getElementById("output").innerHTML = result(input, boolean);
@@ -29,7 +31,9 @@ function result(input, boolean) {
     var alphabet = "abcdefghijklmnopqrstuvwxyz";
     var truekey = checkKey(document.getElementById("key").value.toLowerCase());
     var count = 0;
+    // count näitab millise key chari juures ollakse
     for (var n = 0; n < input.length; n++) {
+        // n näitab millise input chari juures ollakse
         if (isAlpha(input.charAt(n)) === false) {
             result += input.charAt(n);
             continue
