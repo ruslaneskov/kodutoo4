@@ -34,3 +34,8 @@ button {
     cursor: pointer;
     border-radius: 6px;
 }
+#logo {
+    padding: 25px 128px;
+    text-align: left;
+    transition: 0.3s;
+}
