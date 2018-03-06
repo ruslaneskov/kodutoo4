@@ -59,3 +59,24 @@ function result(input, boolean) {
     document.getElementById("output").innerHTML = result;
     return result;
 }
+
+function md5f() {
+    var n = 0; // for loop index
+    var input = document.getElementById("input").value; // input
+    var dataBase = "https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/CommonCreds/10-million-password-list-top-100000.txt";
+    // using xml for work with data
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", dataBase, false);
+    xmlhttp.send(null);
+    var text = xmlhttp.responseText;
+    var regular = text.split('\n');
+    for (n; n <= regular.length; n++) {
+        if (n === regular.length) {
+            return document.getElementById("output").innerHTML = "No marvelous result!";
+        }
+        else if (md5(regular[n]) === input) {
+            return document.getElementById("output").innerHTML = regular[n];
+            //tagastab
+        }
+    }
+}
