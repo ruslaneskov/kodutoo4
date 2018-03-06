@@ -7,6 +7,7 @@
  * @license MIT
  */
 /*jslint bitwise: true */
+/* sha */
 (function () {
     'use strict';
 

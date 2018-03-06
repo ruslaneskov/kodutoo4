@@ -11,6 +11,7 @@ function otpBack() {
     document.getElementById("output").innerHTML = result(input, boolean);
 }
 function sha5112() {
+    // sha512
     var input = document.getElementById("input").value.toLowerCase();
     document.getElementById("output").innerHTML = sha512(input);
 }

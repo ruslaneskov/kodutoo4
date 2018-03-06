@@ -1,4 +1,5 @@
 // JS from github.com/emn178/js-md5
+// võetud üleskirjutatud aadresssilt
 /**
  * [js-md5]{@link https://github.com/emn178/js-md5}
  *
